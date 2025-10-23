@@ -1,18 +1,20 @@
 // homework!!!
 
+// MIDI protocol 101:
+// 0-127 with 0 as lowest value and 127 as highest
+
+//most recent side effect is at the bottom of the console
+
 // Control Flow
 // - Determines the order in which statements in a program are executed
 // - JavaScript executes code line-by-line from top to bottom unless control structures (like conditionals or loops) alter that flow.
-
-// MIDI protocol 101:
-// 0-127 with 0 as lowest value and 127 as highest
 
 let favMIDI = prompt("What's your favorite MIDI integer?")
 
 // *if* 
 // - Executes a block of code only if a specified condition is true.
 let midi = 64;
-if (midi >= 0 && midi <= 127) {
+if (midi >= 0 && midi <= 127){
   console.log("VALID", midi);
 }
 
@@ -38,9 +40,9 @@ if (manyMIDI < 64) {
 
 // *else-if* for More Multiple Conditions
 let mmMIDI = 64;
-if (mmMIDI == 12) {
+if (mmMIDI === 12) {
   console.log("MIDI is 12.");
-} else if (mmMIDI == 13) {
+} else if (mmMIDI === 13) {
   console.log("MIDI is 13.");
 } else if (mmMIDI > 64) {
   console.log("MIDI is greater than 64.");
@@ -64,7 +66,7 @@ for (let i = 0; i < 128; i++) { //standard structure for 'for' accumulators -- i
 }
 
 // incrementing by 2
-for (let i = 0; i < 128; i += 2) {
+for (let i = 0; i < 128; i += 2) { // addition assignment operator: adds the value on right to binding on left; rebinds what is on the left to the result of the calculation
   console.log(`MIDI value is ${i}`);
 }
 
@@ -87,14 +89,14 @@ for (let row = "#"; row.length < 8; row += "#") // .js method length
 // Nested for-loops
 //chessboard
 let size = 8;
-let board = "";
+let board = " ";
 
-for (let y = 0; y < size; y++) {
-  for (let x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0) {
+for (let y = 0; y < size; y++) { // accumulator for the 'columns'
+  for (let x = 0; x < size; x++) { // accumulator for the 'rows'
+    if ((x + y) % 2 === 0) {
       board += " ";
     } else {
-      board += "#"; // addition assignment operator: adds the value on right to binding on left; rebinds what is on the left to the result of the calculation
+      board += "#"; 
     }
   }
   board += "\n";

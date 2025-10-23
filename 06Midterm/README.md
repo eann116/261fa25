@@ -132,10 +132,10 @@ Hint: Use nested for-loops to tile your visual objects. The first loop goes thro
 
 Description|Grade
 ---|---:|
-The documentation is complete and reflects all 4 Phases. | 20%
+The documentation is complete according to the syllabus outline for documentation and reflects all 4 Phases. | 40%
 Project is presented clearly in class. | 20%
 Phase 1 fulfills the requirements. | 10%
 Phase 2 fulfills the requirements. | 10%
-Phase 3 fulfills the requirements. | 20%
-Phase 4 fulfills the requirements. | 20%
+Phase 3 fulfills the requirements. | 10%
+Phase 4 fulfills the requirements. | 10%
 **Total** | **100%**
