@@ -85,7 +85,7 @@
 
 ## HTML5 BASICS with [rdwrome.github.io](https://rdwrome.github.io/)
   - Declare HTML5
-  - <header>
+  - ```<header>```
 	  - js
 	  - css
   - paragraphs
@@ -98,6 +98,7 @@
   - images/gifs
   - lists
   - audio
+  - js
   - divisions
   - css again!
 
@@ -109,6 +110,5 @@
 	- [CSS Templates](https://www.w3schools.com/css/)
 	- [bootstrap](https://getbootstrap.com/docs/4.3/getting-started/contents/#css-files)
 
-- **[Building a Website with pages.github.com](https://pages.github.com/)**
-	- User site
-	- GitHub Desktop!
+- **[Building a Website with pages.github.com](https://docs.github.com/en/pages/quickstart)**
+- Do first 11 steps (stop at changing title and description)
