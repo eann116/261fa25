@@ -19,7 +19,7 @@
 - Almost everything in Python is an object
 - Principles of OOP
     - Encapsulation
-  		- object: independent part of the program that manages itself (own rules and ways of doing things)
+  	- object: independent part of the program that manages itself (own rules and ways of doing things)
       - (objects are what Python manipulates)
       - objects are reusable
       - a specific realization of an object is an instance

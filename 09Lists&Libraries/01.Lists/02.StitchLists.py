@@ -1,5 +1,5 @@
 instruments = ['Drum', 'Guitar', 'Bass']
-gears = ['Microphone', 'Speakers', 'Mixer']
+gear = ['Microphone', 'Speakers', 'Mixer']
 
-my_band = instruments + gears
+my_band = instruments + gear
 print("My band has:", my_band)
