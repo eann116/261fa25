@@ -17,53 +17,55 @@
 ## Object-oriented programming
 - Some languages can do it, some languages must do it, e.g. javaScript *can* do it, Python *must* do it
 - Almost everything in Python is an object
-- Principles of OOP
-    - Encapsulation
-  	- object: independent part of the program that manages itself (own rules and ways of doing things)
-      - (objects are what Python manipulates)
-      - objects are reusable
-      - a specific realization of an object is an instance
-  	- Inheritance
-      - objects get their functions from classes
-      - class: template, blueprint for creating objects
-  		- superclass is parent, class is child
-  		- class inherits attributes of parent (through abstraction) but modifies, evolves
-      - classes are reusable
-  	- Polymorphism
-  		- change the way something works by overriding and overloading
-      - change type, have multiple types work together
-  		- overriding: walking to walking backwards
-  		- overloading: walking to running
+- **Encapsulation/aggregation**
+- object: independent part of the program that manages itself (own rules and ways of doing things); a representation of something that you can control and send messages to
+- **Inheritance**
+- objects get their functions/methods from classes
+- class: template, blueprint for creating objects, specific instances
+- superclass is parent, class is child
+- class inherits attributes of parent (through abstraction) but modifies, evolves
+- classes are reusable
+- **Polymorphism**
+- produce different results when applied to different objects, e.g. file a paper, file metal
 
-## [Python vs Javascript](https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/)
+## XCODE
 
-**[Do You Have Python3?](https://www.python.org/downloads/)**
-- More functional standard libraries than 2
-- Some things only supported on 2, though
-  - `python --version`
-  - `python3 --version`
-- DO YOU NEED TO INSTALL COMMAND LINE TOOLS? YES! PLEASE DO! `xcode-select --install`
-- WHERE IS IT?
+- 
+```
+xcode-select --install
+```
+
+## HomeBrew
+
+- 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- 
+```
+/opt/homebrew/bin/brew shellenv
+```
+
+## Where is your python3?
 	- `which python3`
 	- COPY THIS FILE PATH
-- Check your pip!
-	- `pip --version`
-	- `pip3 --version`
-
-**Integrated Development Environments (IDE)**
-- Most commonly used for interpreted languages
-- Interpreter helps you debug within the IDE
 
 **CHECK PYTHON BUNDLE IN TEXTMATE**
 - TextMate>Settings>Variables
 - add the file path you copied from 'which python3', something like:
 `TM_PYTHON` and `/opt/homebrew/bin/python3`
 
-**Running Python: hands.py**
+
+## Integrated Development Environments (IDE)
+- Most commonly used for interpreted languages
+- Interpreter helps you debug within the IDE
+
+**Running Python: world.py**
   - CLI  
   - IDE
 
-- CODE ALONG
+## CODE ALONG
 ```Python
 print(type(10)) #integer
 print(type(10.)) #float
@@ -73,12 +75,14 @@ print(type(True)) #boolean
  
 - Python Function Definition + Call
   - definition has to come before call, but call happens where call happens
-```python
-#function
+  
+```
+# function
 def circle_area(x):
   return x * x * 3.14
-#call
+# call
 print(circle_area(3.0))
+
 ``` 
  
 # Lists
@@ -96,7 +100,7 @@ print(circle_area(3.0))
 - Don't need a module
 
 ## Intro to Lists in Python
-- Use a bracket to enclose
+- Use a ` [ ] ` bracket to enclose
 - Lists are ordered, but again, can have different types
 - Each item in a list is called an *element*
 - Each element is accessed by its numerical index
@@ -108,6 +112,7 @@ print(circle_area(3.0))
 - Reference an element by its index number
 
 ```Python
+
 instruments = ['Drum', 'Guitar', 'Bass']
 
 print(instruments[0]) # Drum
@@ -192,13 +197,7 @@ for instrument in instruments:
 	- but it has to be data of the same type
 ```Python
 
-instruments = ['Drum', 'Guitar', 'Bass']
-counter = 0
-
-for instrument in instruments:
-	counter += 1
-
-print(instruments)
+=
 ```
 
 ## Exersize
