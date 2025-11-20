@@ -60,8 +60,8 @@
 `TM_PYTHON` and `/opt/homebrew/bin/python3`
 
 **Running Python: hands.py**
+  - CLI  
   - IDE
-  - CLI
 
 - CODE ALONG
 ```Python
@@ -120,11 +120,11 @@ print(instruments[2]) # Bass
 ```python
 # Repeat 0 five times. The result is a single list
 numbers = [0] * 5
-print(numbers) # [0, 0, 0, 0, 0]
+print(numbers) 
 
 # Repeat 1, 2, 3 three times.
 numbers = [0, 1, 2] * 3
-print(numbers) # [0, 1, 2, 0, 1, 2, 0, 1, 2]
+print(numbers)
 ```
 
 - List mechanics with an update
@@ -133,13 +133,13 @@ print(numbers) # [0, 1, 2, 0, 1, 2, 0, 1, 2]
 old_instruments = ['Drum', 'Guitar', 'Bass']
 new_instruments = old_instruments
 
-# Both prints out ['Drum', 'Guitar', 'Bass']
+# Both print out ['Drum', 'Guitar', 'Bass']
 print(old_instruments)
 print(new_instruments)
 
 new_instruments[0] = 'Percussion'
 
-# Both prints out ['Percussion', 'Guitar', 'Bass']
+# Both print out ['Percussion', 'Guitar', 'Bass']
 print(old_instruments)
 print(new_instruments)
 ```
@@ -191,6 +191,7 @@ for instrument in instruments:
 - You can also use a counter to iterate through a list with its index value
 	- but it has to be data of the same type
 ```Python
+
 instruments = ['Drum', 'Guitar', 'Bass']
 counter = 0
 
@@ -210,7 +211,7 @@ print(instruments)
 - Hierarchy: built-ins; packages; writing your own packages
 - Extend the capabilities of your program
 - Use the keyword *import* to implement
-- Access variables and functions in the module wusing the **.** operator
+- Access variables and functions in the module using the **.** operator
 - Then rename the module, if you like, with the 'as' keyword
 ```Python
 # standard import
@@ -239,7 +240,7 @@ help('random.random')
 ```
 
 ## Writing Text Files in Python
-- They're writing to somewhere like: /Users/rrome/LoremIpsum.txt
+- They're writing to somewhere where the file you're using is
 ```Python
 file = open("LoremIpsum.txt", "w")
 file.write(
