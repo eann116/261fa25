@@ -3,14 +3,6 @@
 APIs—**Application Programming Interfaces**—allow two pieces of software to communicate.
 They define *how* you ask for information and *what form* that information comes back in.
 
-Think of an API like * a **vending machine panel** (you press the right button → get the right snack)
-
-In programming, an API is the panel that says:
-
-> “If you send a request in *this* format, the server will send back *this* information.”
-
-APIs let your code * fetch **real-world data** (weather, MBTA schedules, air quality, earthquakes)
-
 # Most API Responses Are JSON
 
 **JSON** (JavaScript Object Notation) is the most common data format.
@@ -37,6 +29,8 @@ Python turns JSON into:
 * numbers (`int/float`)
 * strings (`str`)
 
+# [JSON FILES AND LIVECODING](https://strudel.cc/learn/samples/#loading-samples-from-file-urls)
+
 # Making API Requests in Python
 
 ### Two main ways:
@@ -44,14 +38,11 @@ Python turns JSON into:
 ## 1. **`urllib.request`**
 
 * built into Python
-* no installation required
-* more verbose and lower-level
 
 ## 2. **`requests`** (recommended)
 
 * must install with `pip`
-* simpler, more readable
-* handles errors more gracefully
+
 
 For teaching, `urllib.request` is useful because it requires no installation on a clean system.
 
@@ -73,7 +64,7 @@ This returns JSON listing:
 
 ```python
 import json
-import urllib.request  # built-in HTTP client
+import urllib.request  
 
 url = "http://api.open-notify.org/astros.json"
 response = urllib.request.urlopen(url)
@@ -123,17 +114,9 @@ It:
 
 When you run this program, you’ll get a simple text file listing the astronauts.
 
-# DOGS in the Command Line (CLI)
+# JOKES and DOGS in the CLI
 
-We’ll use the Dog CEO API:
-
-```
-https://dog.ceo/api/breeds/image/random
-```
-
-This returns JSON with a URL of a random dog image.
-
-### 1. Install packages (only once)
+### Install packages
 
 ```bash
 pip3 install requests pillow
@@ -141,38 +124,4 @@ pip3 install requests pillow
 
 * **requests** → makes web calls easy
 * **pillow (PIL)** → opens and displays images
-
-### 2. Run your program
-
-```bash
-python3 {{{your/path/to/dogs.py}}}
-```
-
-Your script can:
-
-* fetch the image URL
-* download the image
-* display it using Pillow (opens Preview on macOS)
-
-# BAD PROGRAMMING JOKES in the CLI
-
-Using this API:
-
-```
-https://official-joke-api.appspot.com/random_joke
-```
-
-Example Python script:
-
-```bash
-python3 {{{your/path/to/jokes.py}}}
-```
-
-Your program will:
-
-* fetch a JSON object with `setup` and `punchline`
-* print them in sequence
-* act like a little command-line comedy club
-
-
 
