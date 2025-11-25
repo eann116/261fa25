@@ -3,7 +3,7 @@
 ## 1 Sentence Overview
 
 
-## 3 SPECIFIC resources you know you will use in developing your project! With Hyperlinks! Not "Rachel's Class Repository!" Not ChatGPT! Not "YouTube"!
+## THREE SPECIFIC RESOURCES you know you will use in developing your project! With Hyperlinks! Not "Rachel's Class Repository!" Not ChatGPT! Not "YouTube"! if you are making a portfolio website, the three resources must be portfolio websites you are using for reference (like 'reference tracks')
 
 
 ## 1 Paragraph Overview
